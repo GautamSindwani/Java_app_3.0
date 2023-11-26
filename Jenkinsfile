@@ -72,14 +72,14 @@ pipeline{
                }
             }
         }
-        stage('Jar File Push to JFrog'){
-         when { expression {  params.action == 'create' } }
-            steps{
-               script{
-		       deployArtifactory()
-               }
-            }
-        }
+        // stage('Jar File Push to JFrog'){
+        //  when { expression {  params.action == 'create' } }
+        //     steps{
+        //        script{
+		      //  deployArtifactory()
+        //        }
+        //     }
+        // }
  //        stage ('Pushing Jar file to Jfrog'){
  //         when { expression { params.action == 'create' } }
  //            steps{
